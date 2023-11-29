@@ -3,11 +3,6 @@
 }
 
 .introducao {
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -30,11 +25,11 @@
   align-self: end;
 }
 
-.introducao-titulo {
+.introducao-info h1 {
   margin-bottom: 32px;
 }
 
-.introducao-p {
+.introducao-info p {
   margin-bottom: 20px;
 }
 
@@ -57,7 +52,7 @@
     padding-bottom: 0px;
   }
 
-  .introducao-titulo {
+  .introducao-info h1 {
     margin-bottom: 16px;
   }
 

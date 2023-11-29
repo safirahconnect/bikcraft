@@ -19,9 +19,13 @@ ul {
 img {
   display: block;
   max-width: 100%;
+}
+
+img[src$=".jpg"] {
   border-radius: 4px;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }

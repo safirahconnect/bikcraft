@@ -95,6 +95,10 @@
     font-size: 3rem;
   }
 
+  .font-1-lg {
+    font-size: 1.5rem;
+  }
+
   .font-2-md,
   .font-2-md-b-caps {
     font-size: 1.125rem;
@@ -108,11 +112,24 @@
     font-size: 2rem;
   }
 
-  .font-1-lg {
-    font-size: 1.5rem;
+  .font-1-sm,
+  .font-2-sm-b {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-1-max,
+  .font-1-xlg,
+  .font-1-xlg-caps {
+    font-size: 1.8rem;
   }
 
-  .font-1-sm {
-    font-size: 1rem;
+  .font-1-lg {
+    font-size: 1.2rem;
+  }
+  .font-1-sm,
+  .font-2-sm-b {
+    font-size: 0.875rem;
   }
 }
