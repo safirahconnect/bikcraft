@@ -1,0 +1,118 @@
+.font-1-max {
+  font: 600 4rem/1.125 "Poppins";
+}
+
+.font-1-xlg {
+  font: 600 2.25rem/1.11 "Poppins";
+}
+
+.font-1-xlg-caps {
+  font: 600 2.25rem/1.11 "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+}
+
+.font-1-lg {
+  font: 600 2rem/1.25 "Poppins";
+}
+
+.font-1-md {
+  font: 500 1.5rem/1.5 "Poppins";
+}
+
+.font-1-md-b {
+  font: 600 1.5rem/1.5 "Poppins";
+}
+
+.font-1-sm {
+  font: 500 1.125rem/1.77 "Poppins";
+}
+
+.font-1-sm-b {
+  font: 600 1.125rem/1.77 "Poppins";
+}
+
+.font-1-xsm {
+  font: 600 0.875rem/0.7 "Poppins";
+}
+
+.font-1-min {
+  font: 500 0.75rem/1.33 "Poppins";
+}
+
+.font-1-min-caps {
+  font: 500 0.75rem/1.33 "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+}
+
+.font-1-min-b {
+  font: 600 0.75rem/1.33 "Poppins";
+}
+
+.font-2-md {
+  font: 400 1.5rem/1.5 "Rubik";
+}
+
+.font-2-md-b-caps {
+  font: 500 1.5rem/1.5 "Rubik";
+}
+
+.font-2-sm {
+  font: 400 1.125rem/1.33 "Rubik";
+}
+
+.font-2-sm-b {
+  font: 500 1.125rem/1.33 "Rubik";
+}
+
+.font-2-xsm {
+  font: 400 1rem/1.5 "Rubik";
+}
+
+.font-2-xsm-b {
+  font: 500 1rem/1.5 "Rubik";
+}
+
+.font-2-min {
+  font: 400 0.875rem/1.42 "Rubik";
+}
+
+.font-3-max {
+  font: 700 4rem/1.125 "Caladea";
+}
+
+.font-3-max {
+  font: 700 4rem/1.125 "Caladea";
+}
+
+.font-3-xlg-i {
+  font: italic 700 2.25rem/1.33 "Caladea";
+}
+
+@media (max-width: 1200px) {
+  .font-1-max {
+    font-size: 3rem;
+  }
+
+  .font-2-md,
+  .font-2-md-b-caps {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-max,
+  .font-1-xlg,
+  .font-1-xlg-caps {
+    font-size: 2rem;
+  }
+
+  .font-1-lg {
+    font-size: 1.5rem;
+  }
+
+  .font-1-sm {
+    font-size: 1rem;
+  }
+}
