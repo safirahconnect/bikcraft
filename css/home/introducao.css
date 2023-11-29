@@ -1,5 +1,6 @@
 .introducao-bg {
-  background: linear-gradient(var(--black) 580px, var(--white) 120px);
+  background: var(--black);
+  box-shadow: inset 0px -120px 0px var(--white);
 }
 
 .introducao {
@@ -7,17 +8,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   position: relative;
-}
-
-.introducao::after {
-  content: "";
-  display: block;
-  width: 56px;
-  height: 56px;
-  background: url("../img/dec/bottom-left.svg") no-repeat;
-  position: absolute;
-  bottom: 140px;
-  left: -80px;
 }
 
 .introducao-info {
@@ -40,7 +30,8 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
-    background: linear-gradient(var(--gray-15) 640px, var(--white) 120px);
+    background: var(--gray-15);
+    box-shadow: inset 0px -60px 0px var(--white);
     padding-top: 40px;
   }
   .introducao {

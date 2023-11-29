@@ -1,6 +1,18 @@
 .escolha {
   padding: 120px 20px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.escolha::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: url("../../img/dec/top-left.svg") no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 60px;
 }
 
 .escolha h2 {
@@ -52,6 +64,9 @@
 }
 
 @media (max-width: 800px) {
+  .escolha::before {
+    display: none;
+  }
   .escolha {
     padding: 40px 20px;
   }
