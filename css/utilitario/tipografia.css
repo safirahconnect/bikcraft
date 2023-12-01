@@ -125,10 +125,13 @@
 }
 
 @media (max-width: 400px) {
-  .font-1-max,
   .font-1-xlg,
   .font-1-xlg-caps {
     font-size: 1.7rem;
+  }
+
+  .font-1-max {
+    font-size: 1.5rem;
   }
 
   .font-1-lg,
