@@ -33,6 +33,16 @@
   color: var(--white);
 }
 
+.botao.prata {
+  background: var(--gray-14);
+  color: var(--gray-07);
+}
+
+.botao.prata:hover {
+  background: var(--gray-13);
+  color: var(--gray-06);
+}
+
 @media (max-width: 800px) {
   .link {
     font-size: 1rem;

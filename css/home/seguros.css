@@ -1,0 +1,104 @@
+.seguros-bg {
+  background: var(--gray-15);
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.seguros h2 {
+  margin-bottom: 60px;
+}
+
+.seguros-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguros-lista > li {
+  background: var(--black);
+  padding: 32px 32px 32px 60px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.seguros-lista span {
+  text-align: right;
+  display: block;
+  grid-column: 2;
+}
+
+.seguros-lista .botao {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.seguro-beneficios {
+  margin-bottom: 32px;
+  grid-column: 1/-1;
+}
+
+.seguro-beneficios li + li {
+  margin-top: 20px;
+}
+
+.seguro-beneficios li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.seguro-beneficios li::before {
+  content: "";
+  display: inline-block;
+  background: url("../../img/icones/check.svg") no-repeat;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -21px;
+}
+
+@media (max-width: 800px) {
+  .seguros-bg {
+    padding: 40px 0px;
+  }
+  .seguros h2 {
+    margin-bottom: 32px;
+  }
+  .seguros-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .seguros-lista > li {
+    position: relative;
+  }
+
+  .seguros-lista > li::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url("../../img/dec/bottom-right.svg") no-repeat;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .seguros-lista h3 {
+    margin-bottom: 32px;
+  }
+
+  .seguros-lista .botao {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .seguros-lista > li::after {
+    display: none;
+  }
+  .seguros-lista > li {
+    padding: 32px;
+  }
+}

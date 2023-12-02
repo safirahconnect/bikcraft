@@ -138,6 +138,11 @@
     font-size: 1.7rem;
   }
 
+  #seguros .font-1-xlg,
+  #seguros .font-1-xlg-caps {
+    font-size: 1.4rem;
+  }
+
   .font-1-max {
     font-size: 1.5rem;
   }
