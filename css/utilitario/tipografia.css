@@ -148,6 +148,10 @@
     font-size: 1.5rem;
   }
 
+  .titulo .font-1-max {
+    font-size: 1.3rem;
+  }
+
   .font-1-lg,
   .font-1-md {
     font-size: 1.2rem;
@@ -163,5 +167,9 @@
   .font-2-md-b-caps,
   .font-2-xsm {
     font-size: 0.875rem;
+  }
+
+  .titulo .font-2-md-b-caps {
+    font-weight: 400;
   }
 }
