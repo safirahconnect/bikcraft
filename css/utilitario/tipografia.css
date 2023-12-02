@@ -84,16 +84,13 @@
   font: 700 4rem/1.125 "Caladea";
 }
 
-.font-3-max {
-  font: 700 4rem/1.125 "Caladea";
-}
-
 .font-3-xlg-i {
   font: italic 700 2.25rem/1.33 "Caladea";
 }
 
 @media (max-width: 1200px) {
-  .font-1-max {
+  .font-1-max,
+  .font-3-max {
     font-size: 3rem;
   }
 
@@ -101,7 +98,8 @@
     font-size: 1.5rem;
   }
 
-  .font-1-md {
+  .font-1-md,
+  .font-1-md-b {
     font-size: 1.3rem;
   }
 
@@ -114,13 +112,23 @@
 @media (max-width: 800px) {
   .font-1-max,
   .font-1-xlg,
-  .font-1-xlg-caps {
+  .font-1-xlg-caps,
+  .font-3-xlg-i {
     font-size: 2rem;
   }
 
   .font-1-sm,
   .font-2-sm-b {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-3-max {
+    font-size: 2rem;
+  }
+  .font-3-xlg-i {
+    font-size: 1.5rem;
   }
 }
 
@@ -139,7 +147,8 @@
     font-size: 1.2rem;
   }
 
-  .font-2-md {
+  .font-2-md,
+  .font-1-md-b {
     font-size: 1rem;
   }
 
