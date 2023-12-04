@@ -1,0 +1,134 @@
+.bicicletas-lista {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bicicletas-lista > li + li {
+  margin-top: 60px;
+}
+
+.bicicleta-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicleta-item-bg {
+  background: linear-gradient(to right, #fff 30%, #000 0%);
+  padding: 60px 0px;
+}
+
+.bicicleta-img {
+  display: grid;
+  align-items: start;
+  justify-items: end;
+}
+
+.bicicleta-img img,
+.bicicleta-img span {
+  grid-area: 1/1;
+}
+
+.bicicleta-img span {
+  background: var(--black);
+  padding: 8px 8px 8px 16px;
+  border-radius: 4px 0px 0px 4px;
+  margin-top: 20px;
+}
+
+.bicicleta-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+}
+
+.bicicleta-info h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: var(--primary-01);
+  margin-bottom: 8px;
+}
+
+.bicicleta-info h2,
+.bicicleta-info p {
+  grid-column: 1/-1;
+}
+
+.bicicleta-info h2 {
+  margin-bottom: 20px;
+}
+
+.bicicleta-info p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-info a {
+  place-self: end;
+}
+
+.bicicleta-beneficios {
+  display: grid;
+  gap: 16px;
+}
+
+.bicicleta-beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicleta-beneficios img {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-lista {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .bicicletas-lista > li + li {
+    margin-top: 40px;
+  }
+  .bicicleta-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bicicleta-item-bg {
+    background: var(--black);
+    padding: 32px 0px;
+  }
+  .bicicleta-beneficios {
+    gap: 8px;
+  }
+
+  .bicicleta-info h2 {
+    margin-bottom: 16px;
+  }
+
+  .bicicleta-info p {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-img span {
+    padding: 4px 4px 4px 8px;
+  }
+
+  .bicicleta-beneficios,
+  .bicicleta-info a {
+    grid-column: 1/-1;
+  }
+
+  .bicicleta-beneficios {
+    margin-bottom: 32px;
+  }
+
+  .bicicleta-info a {
+    justify-self: start;
+  }
+}
