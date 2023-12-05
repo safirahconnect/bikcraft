@@ -67,9 +67,7 @@
   .seguros-bg {
     padding: 40px 0px;
   }
-  #seguros-home h2,
-  #seguros-home h3,
-  #seguros h2 {
+  #seguros-home h2 {
     margin-bottom: 32px;
   }
   .seguros-lista {
@@ -102,5 +100,12 @@
   }
   .seguros-lista > li {
     padding: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  #seguros-home h3,
+  #seguros h2 {
+    margin-bottom: 24px;
   }
 }

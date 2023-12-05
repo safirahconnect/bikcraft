@@ -175,3 +175,12 @@
     font-weight: 400;
   }
 }
+
+@media (max-width: 320px) {
+  #seguros-home .font-1-xlg,
+  #seguros .font-1-xlg,
+  #seguros-home .font-1-xlg-caps,
+  #seguros .font-1-xlg-caps {
+    font-size: 1.25rem;
+  }
+}
