@@ -139,7 +139,9 @@
     font-size: 1.7rem;
   }
 
+  #seguros-home .font-1-xlg,
   #seguros .font-1-xlg,
+  #seguros-home .font-1-xlg-caps,
   #seguros .font-1-xlg-caps {
     font-size: 1.4rem;
   }
