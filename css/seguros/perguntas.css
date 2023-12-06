@@ -1,0 +1,82 @@
+.perguntas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.perguntas h2 {
+  margin-bottom: 60px;
+}
+
+.perguntas-lista div {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.perguntas-lista div:nth-child(odd) {
+  background: var(--gray-03);
+}
+
+.perguntas-lista dt button {
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer; /*não vem por padrão*/
+  border: none; /*tirando estilização pré-settada*/
+  text-align: left; /*tirando estilização pré-settada*/
+  background: none; /*tirando estilização pré-settada*/
+  width: 100%; /*tirando estilização pré-settada*/
+}
+
+.perguntas-lista dt button::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: var(--primary-01);
+}
+
+.perguntas-lista dt button::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../img/icones/seta-abrir.svg") no-repeat;
+  transition: transform 0.3s;
+}
+
+.perguntas-lista dt button:hover::after,
+.perguntas-lista div:first-child dt button::after {
+  transform: rotate(180deg);
+}
+
+.perguntas-lista div:first-child dt button:hover::after {
+  transform: none;
+}
+
+.perguntas-lista dd {
+  max-width: 70ch;
+  margin-left: 22px;
+}
+
+.perguntas-lista div:not(:first-child) dd {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .perguntas h2 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .perguntas-lista div {
+    padding: 12px;
+  }
+}
