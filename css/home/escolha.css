@@ -1,6 +1,7 @@
 .escolha {
-  padding: 120px 20px;
-  box-sizing: border-box;
+  --padding-box: 120px;
+  padding-top: var(--padding-box);
+  padding-bottom: var(--padding-box);
   position: relative;
 }
 
@@ -16,7 +17,7 @@
 }
 
 .escolha h2 {
-  margin: 0px auto 32px auto;
+  margin-bottom: 32px;
 }
 
 .escolha-lista {
@@ -68,7 +69,7 @@
     display: none;
   }
   .escolha {
-    padding: 40px 20px;
+    --padding-box: 40px;
   }
   .escolha h2 {
     margin-bottom: 16px;

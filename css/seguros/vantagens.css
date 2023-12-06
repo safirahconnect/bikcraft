@@ -3,8 +3,9 @@
 }
 
 .vantagens {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  --padding-box: 120px;
+  padding-top: var(--padding-box);
+  padding-bottom: var(--padding-box);
 }
 
 .vantagens h2 {
@@ -13,7 +14,7 @@
 
 .vantagens-lista {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
 }
 
@@ -27,22 +28,16 @@
 
 @media (max-width: 800px) {
   .vantagens {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    --padding-box: 40px;
   }
 
   .vantagens h2 {
     margin-bottom: 32px;
   }
-
-  .vantagens-lista {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 600px) {
   .vantagens-lista {
-    grid-template-columns: 1fr;
     gap: 20px;
   }
 }

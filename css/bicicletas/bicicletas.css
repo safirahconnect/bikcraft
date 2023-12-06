@@ -1,6 +1,7 @@
 .bicicletas-lista {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  --padding-box: 120px;
+  padding-top: var(--padding-box);
+  padding-bottom: var(--padding-box);
 }
 
 .bicicletas-lista > li + li {
@@ -85,8 +86,7 @@
 
 @media (max-width: 800px) {
   .bicicletas-lista {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    --padding-box: 40px;
   }
 
   .bicicletas-lista > li + li {

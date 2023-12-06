@@ -1,6 +1,7 @@
 .perguntas {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  --padding-box: 120px;
+  padding-top: var(--padding-box);
+  padding-bottom: var(--padding-box);
 }
 
 .perguntas h2 {
@@ -66,8 +67,7 @@
 
 @media (max-width: 800px) {
   .perguntas {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    --padding-box: 40px;
   }
 
   .perguntas h2 {

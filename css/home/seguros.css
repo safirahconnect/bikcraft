@@ -1,7 +1,8 @@
 .seguros-bg {
   background: var(--gray-15);
-  padding-top: 60px;
-  padding-bottom: 120px;
+  --padding-box: 120px;
+  padding-top: calc(var(--padding-box) / 2);
+  padding-bottom: var(--padding-box);
 }
 
 #seguros .seguros-bg {
@@ -65,7 +66,8 @@
 
 @media (max-width: 800px) {
   .seguros-bg {
-    padding: 40px 0px;
+    --padding-box: 40px;
+    padding-top: var(--padding-box);
   }
   #seguros-home h2 {
     margin-bottom: 32px;

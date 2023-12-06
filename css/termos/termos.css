@@ -1,6 +1,7 @@
 .termos {
-  padding-top: 60px;
-  padding-bottom: 120px;
+  --padding-box: 120px;
+  padding-top: calc(var(--padding-box) / 2);
+  padding-bottom: var(--padding-box);
 }
 
 .termos h2 {
@@ -21,8 +22,8 @@
 
 @media (max-width: 800px) {
   .termos {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    --padding-box: 40px;
+    padding-top: var(--padding-box);
   }
 
   .termos h2 {
