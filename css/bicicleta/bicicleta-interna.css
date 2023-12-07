@@ -1,0 +1,157 @@
+.bicicleta-interna {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.bicicleta-interna-galeria {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: start;
+  gap: 20px;
+}
+
+.bicicleta-interna-galeria li:first-child {
+  grid-column: 1/-1;
+}
+
+.bicicleta-interna-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: start;
+  gap: 0px 12px;
+}
+
+.bicicleta-interna-info > p,
+.bicicleta-interna-info h2,
+.bicicleta-interna-info ul {
+  grid-column: 1/-1;
+}
+
+.bicicleta-interna-info > p {
+  margin-bottom: 36px;
+}
+
+.bicicleta-interna-info a {
+  grid-column: 1;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.bicicleta-interna-info div {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.bicicleta-interna-info div span {
+  background: var(--black);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicleta-interna-info div span::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+}
+
+.bicicleta-interna-info div span:first-child::before {
+  background: url("../../img/icones/entrega.svg") no-repeat;
+}
+
+.bicicleta-interna-info div span:last-child::before {
+  background: url("../../img/icones/estoque.svg") no-repeat;
+}
+
+.bicicleta-interna-info div span + span {
+  margin-top: 8px;
+}
+
+.bicicleta-interna-info h2 {
+  margin-bottom: 12px;
+}
+
+.bicicleta-interna-informacoes {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-interna-ficha,
+.bicicleta-interna-informacoes {
+  background: var(--black);
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.bicicleta-interna-informacoes img {
+  width: 24px;
+}
+
+.bicicleta-interna-informacoes h3,
+.bicicleta-interna-informacoes img {
+  margin-bottom: 4px;
+}
+
+.bicicleta-interna-ficha li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bicicleta-interna-ficha li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--gray-15);
+  position: absolute;
+  bottom: -8px;
+}
+
+.bicicleta-interna-ficha li + li {
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-interna {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  .bicicleta-interna-info > p {
+    margin-bottom: 24px;
+  }
+
+  .bicicleta-interna-info div span + span {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-interna-info div span:first-child::before,
+  .bicicleta-interna-info div span:last-child::before {
+    display: none;
+  }
+
+  .bicicleta-interna-galeria,
+  .bicicleta-interna-informacoes {
+    grid-template-columns: auto;
+  }
+  .bicicleta-interna-galeria li:first-child {
+    grid-column: initial;
+  }
+  .bicicleta-interna-informacoes,
+  .bicicleta-interna-ficha {
+    padding: 20px;
+  }
+
+  .bicicleta-interna-informacoes {
+    margin-bottom: 20px;
+  }
+}
