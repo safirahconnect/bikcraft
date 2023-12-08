@@ -13,7 +13,11 @@
   background: url("../../img/dec/top-left.svg") no-repeat;
   position: absolute;
   top: 0px;
-  left: 60px;
+  left: 40px;
+}
+
+#bicicleta .escolha::before {
+  top: 40px;
 }
 
 .escolha h2 {

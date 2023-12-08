@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body id="bicicleta">
   <header class="header-bg">
     <div class="container header">
       <a href="../index.html"><img src="../img/bikcraft.svg" alt="Logo da Bikcraft"></a>
@@ -29,7 +29,7 @@
     </div>
   </header>
 
-  <main id="bicicleta">
+  <main>
     <div class=" titulo-bg">
       <div class="titulo container">
         <span class="font-2-md-b-caps g-8">r$ 2499</span>
@@ -45,8 +45,8 @@
 
         <div class="bicicleta-interna-info">
           <p class="font-2-md g-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-          <a class="botao" href="../orcamento.html">Comprar</a>
-          <div>
+          <div class="bicicleta-interna-comprar">
+            <a class="botao" href="../orcamento.html">Comprar Agora</a>
             <span class="font-1-min-b g-9">entrega em 5 dias</span>
             <span class="font-1-min-b g-9">18 em estoque</span>
           </div>
@@ -108,9 +108,28 @@
         </div>
       </div>
     </div>
-
-
   </main>
+
+  <article class="container escolha" aria-labelledby="aria-escolha">
+    <h2 id="aria-escolha" class="font-1-max g-15">escolha a sua<span class="p-1">.</span></h2>
+
+    <ul class="escolha-lista">
+      <li>
+        <a href="./nimbus.html">
+          <img src="../img/bicicletas/nimbus.jpg" alt="Foto da bicicleta Nimbus">
+          <h3 class="font-1-lg g-15">Nimbus Stark</h3>
+          <span class="font-2-sm-b g-12">R$ 4999</span>
+        </a>
+      </li>
+      <li>
+        <a href="./nebula.html">
+          <img src="../img/bicicletas/nebula.jpg" alt="Foto da bicicleta Nebula">
+          <h3 class="font-1-lg g-15">Nebula Cosmic</h3>
+          <span class="font-2-sm-b g-12">R$ 3999</span>
+        </a>
+      </li>
+    </ul>
+  </article>
 
   <footer class="footer-bg">
     <div class="footer container">
