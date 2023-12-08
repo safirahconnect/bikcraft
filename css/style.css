@@ -21,6 +21,7 @@
 
 /*Bicicleta Interna*/
 @import "./bicicleta/bicicleta-interna.css";
+@import "./bicicleta/seguro-bicicleta-interna.css";
 
 /*Seguros*/
 @import "./seguros/vantagens.css";
