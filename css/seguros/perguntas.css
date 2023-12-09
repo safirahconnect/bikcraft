@@ -23,11 +23,7 @@
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
-  cursor: pointer; /*não vem por padrão*/
-  border: none; /*tirando estilização pré-settada*/
   text-align: left; /*tirando estilização pré-settada*/
-  background: none; /*tirando estilização pré-settada*/
-  width: 100%; /*tirando estilização pré-settada*/
 }
 
 .perguntas-lista dt button::before {

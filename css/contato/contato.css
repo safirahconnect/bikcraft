@@ -1,0 +1,133 @@
+.contato-bg {
+  background: var(--gray-02);
+  box-shadow: inset 0 240px var(--gray-15);
+  padding-top: 20px;
+}
+
+.contato {
+  background: var(--black);
+  background: linear-gradient(to right, var(--black) 40%, var(--white) 0px);
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contato-info h2 {
+  margin-bottom: 60px;
+}
+
+.contato-email,
+.contato-endereco {
+  margin-left: 28px;
+  position: relative;
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+}
+
+.contato-email {
+  margin-bottom: 60px;
+}
+
+.contato-endereco span,
+.contato-email a {
+  display: block;
+}
+
+.contato-email a:hover {
+  color: var(--white);
+}
+
+.contato-endereco span:first-child::before,
+.contato-email a:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -28px;
+  top: 4px;
+}
+
+.contato-endereco span:first-child::before {
+  background: url("../../img/icones/local.svg") no-repeat;
+}
+
+.contato-email a:first-child::before {
+  background: url("../../img/icones/email.svg") no-repeat;
+}
+
+.contato-endereco span + span,
+.contato-email a + a {
+  margin-top: 4px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+form .email,
+form .mensagem {
+  grid-column: 1/-1;
+}
+
+form input,
+form textarea {
+  margin-top: 4px;
+  padding: 12px;
+  border: 2px solid var(--gray-04);
+  border-radius: 4px;
+  color: var(--gray-15);
+}
+
+@media (max-width: 1000px) {
+  form button {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 800px) {
+  .contato-bg {
+    padding-top: 0px;
+  }
+  .contato {
+    background: linear-gradient(to bottom, var(--black) 36%, var(--white) 0px);
+    margin-bottom: 40px;
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .contato-info h2 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  form .nome,
+  form .telefone {
+    grid-column: 1/-1;
+  }
+  .contato-email {
+    margin-bottom: 40px;
+  }
+  .contato {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contato {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

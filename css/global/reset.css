@@ -36,3 +36,24 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+button,
+input,
+textarea {
+  width: 100%;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
