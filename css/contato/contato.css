@@ -10,7 +10,6 @@
   display: grid;
   grid-template-columns: 5fr 7fr;
   gap: 60px;
-  margin-bottom: 80px;
   padding-top: 60px;
   padding-bottom: 40px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -104,32 +103,27 @@ form textarea {
     padding-top: 0px;
   }
   .contato {
-    background: linear-gradient(to bottom, var(--black) 36%, var(--white) 0px);
-    margin-bottom: 40px;
+    background: linear-gradient(to bottom, var(--black) 40%, var(--white) 0px);
     padding-top: 40px;
     grid-template-columns: 1fr;
+    gap: 40px;
   }
   .contato-info h2 {
     margin-bottom: 32px;
   }
-}
 
-@media (max-width: 600px) {
-  form .nome,
-  form .telefone {
-    grid-column: 1/-1;
-  }
   .contato-email {
     margin-bottom: 40px;
   }
-  .contato {
-    gap: 40px;
-  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .contato {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background: linear-gradient(to bottom, var(--black) 36%, var(--white) 0px);
+  }
+
+  form .nome,
+  form .telefone {
+    grid-column: 1/-1;
   }
 }
