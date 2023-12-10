@@ -91,6 +91,9 @@
   .loja-info address {
     flex-direction: column;
   }
+  .loja-info address {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -109,10 +112,6 @@
 
   .loja-info {
     padding: 20px 40px;
-  }
-
-  .loja-info address {
-    gap: 20px;
   }
 }
 
