@@ -1,9 +1,5 @@
-.lojas-bg {
-  background: var(--gray-02);
-}
-
 .lojas {
-  padding-top: 40px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -57,18 +53,8 @@
 }
 
 .loja-info address div {
-  margin-left: 12px;
-  position: relative;
-}
-
-.loja-info address div::before {
-  content: "";
-  display: inline-block;
-  width: 2px;
-  height: 100%;
-  background: var(--gray-04);
-  position: absolute;
-  left: -12px;
+  border-left: 2px solid var(--gray-04);
+  padding-left: 12px;
 }
 
 .loja-info > span {
@@ -98,7 +84,7 @@
 
 @media (max-width: 800px) {
   .lojas {
-    padding-top: 0px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
