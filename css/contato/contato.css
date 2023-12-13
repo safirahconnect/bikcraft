@@ -4,15 +4,26 @@
 }
 
 .contato {
-  background: var(--black);
-  background: linear-gradient(to right, var(--black) 40%, var(--white) 0px);
   display: grid;
   grid-template-columns: 5fr 7fr;
-  gap: 60px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   margin-top: 20px;
-  padding: 60px;
+}
+
+.contato-info,
+.contato form {
+  padding: 40px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info {
+  background: var(--black) url("../../img/dec/bottom-left.svg") no-repeat bottom
+    20px left 20px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.contato form {
+  background: var(--white);
+  border-radius: 0px 4px 4px 0px;
 }
 
 .contato-info h2 {
@@ -61,25 +72,33 @@
   padding-left: 28px;
 }
 
+@media (max-width: 1000px) {
+  .contato-info,
+  .contato form {
+    padding: 32px;
+  }
+}
+
 @media (max-width: 800px) {
   .contato {
-    background: linear-gradient(to bottom, var(--black) 40%, var(--white) 0px);
     margin-top: 0px;
-    padding: 32px;
     grid-template-columns: 1fr;
   }
+
+  .contato-info {
+    background: var(--black);
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  .contato form {
+    border-radius: 0px 0px 4px 4px;
+  }
+
   .contato-info h2 {
     margin-bottom: 32px;
   }
 
   .contato-formas {
     margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 600px) {
-  .contato {
-    background: linear-gradient(to bottom, var(--black) 38%, var(--white) 0px);
-    gap: 40px;
   }
 }

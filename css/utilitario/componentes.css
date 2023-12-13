@@ -110,6 +110,7 @@
 .titulo {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: url("../../img/dec/top-right.svg") no-repeat top 60px right 40px;
 }
 
 .titulo > span {
@@ -129,6 +130,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .titulo {
+    background: none;
+  }
+}
+
 @media (max-width: 400px) {
   .titulo {
     padding-top: 20px;
@@ -141,7 +148,7 @@
 #contato form,
 #orcamento .orcamento-form {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
@@ -180,18 +187,13 @@ select {
 
 #contato form .email,
 #contato form .mensagem,
+#contato .botao,
 #orcamento h2,
 #orcamento .email,
 #orcamento .cpf,
 #orcamento .checkbox,
 #orcamento .botao {
   grid-column: 1/-1;
-}
-
-@media (max-width: 1000px) {
-  #contato form button {
-    grid-column: 1/-1;
-  }
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,6 @@
 .parceiros {
   padding: 120px 0px;
+  background: url("../../img/dec/top-left.svg") no-repeat top left 40px;
 }
 
 .parceiros h2 {
@@ -30,6 +31,7 @@
 @media (max-width: 800px) {
   .parceiros {
     padding: 40px 0px;
+    background: none;
   }
   .parceiros h2 {
     margin-bottom: 16px;

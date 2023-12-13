@@ -1,5 +1,6 @@
 .depoimento-bg {
-  background: var(--primary-01);
+  background: var(--primary-01) url("../../img/dec/bottom-right-p.svg")
+    no-repeat bottom 20px right 40px;
   display: grid;
   grid-template-columns: 5fr 7fr;
 }
@@ -42,6 +43,13 @@
   object-fit: cover;
 }
 
+/*imagem solta, limitando ela o conteúdo pertinente a ela também para de crescer*/
+@media (min-width: 1200px) {
+  .depoimento-img img {
+    max-height: 620px;
+  }
+}
+
 @media (max-width: 1200px) {
   .depoimento-info {
     padding: 40px 60px;
@@ -63,6 +71,9 @@
 }
 
 @media (max-width: 600px) {
+  .depoimento-bg {
+    background: var(--primary-01);
+  }
   .depoimento-info blockquote::before,
   .depoimento-info blockquote::after {
     font-size: 3.5rem;

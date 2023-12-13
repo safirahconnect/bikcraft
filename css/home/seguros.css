@@ -1,5 +1,6 @@
 .seguros-bg {
-  background: var(--gray-15);
+  background: var(--gray-15) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 40px left 40px;
   --padding-box: 120px;
   padding-top: calc(var(--padding-box) / 2);
   padding-bottom: var(--padding-box);

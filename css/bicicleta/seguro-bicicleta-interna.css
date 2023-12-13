@@ -1,5 +1,6 @@
 .seguro-bicicleta-interna-bg {
-  background-color: var(--gray-15);
+  background: var(--gray-15) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 160px right 40px;
   box-shadow: inset 0 -120px var(--black), inset 0 120px var(--white);
 }
 
