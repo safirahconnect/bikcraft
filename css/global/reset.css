@@ -42,7 +42,10 @@ a {
 }
 
 #contato form input,
-#contato form textarea {
+#contato form textarea,
+#orcamento form input[type="text"],
+#orcamento form input[type="email"],
+#orcamento form select {
   width: 100%;
 }
 

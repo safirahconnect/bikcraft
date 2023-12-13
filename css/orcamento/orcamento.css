@@ -1,0 +1,186 @@
+#orcamento {
+  background: var(--gray-02);
+  box-shadow: inset 0 600px var(--gray-15);
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  padding-bottom: 120px;
+}
+
+.orcamento h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.orcamento h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background: var(--primary-01);
+  position: absolute;
+  left: -12px;
+}
+
+.orcamento-tipo,
+.orcamento-form {
+  padding: 40px;
+}
+
+.orcamento-tipo {
+  background: var(--black);
+  border-radius: 4px 0px 0px 4px;
+}
+
+.orcamento-form {
+  background: var(--white);
+  border-radius: 0px 4px 4px 0px;
+}
+
+.orcamento-tipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.orcamento-tipo > * {
+  grid-column: 1/-1;
+}
+
+.orcamento-tipo > label {
+  grid-column: initial;
+}
+
+.orcamento-tipo label {
+  background: var(--gray-14);
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.orcamento-tipo input:checked + label {
+  background: var(--white);
+  color: var(--gray-15);
+}
+
+.orcamento-tipo input {
+  /* display: none; TAB não funciona*/
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamento-tipo input:focus + label {
+  box-shadow: 0 0 0 2px var(--primary-01);
+  border-color: var(--black);
+}
+
+.orcamento-tipo label:hover {
+  background: var(--gray-13);
+}
+
+.orcamento-tipo label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--gray-07);
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.orcamento-tipo input:checked + label::before {
+  border: 2px solid var(--gray-09);
+  box-shadow: inset 0 0 0 2px var(--white), inset 0 0 0 5px var(--gray-09);
+}
+
+.orcamento-tipo label span {
+  display: none;
+}
+
+.orcamento-tipo input:checked + label span {
+  display: inline-block;
+}
+
+.orcamento-tipo-selecionado {
+  display: none;
+}
+
+.orcamento-tipo-selecionado h2,
+.orcamento-form h2:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
+input#bikcraft:checked ~ #orcamento-bikcraft,
+input#seguro:checked ~ #orcamento-seguro {
+  display: grid;
+  gap: 20px;
+}
+
+.orcamento-tipo-detalhes {
+  display: none;
+  background: var(--white);
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.orcamento-tipo-detalhes li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.orcamento-tipo-detalhes li + li {
+  margin-top: 8px;
+}
+
+.orcamento-tipo-detalhes li > img {
+  width: 16px;
+}
+
+.orcamento-tipo-selecionado input:checked + label + .orcamento-tipo-detalhes {
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  .orcamento-tipo,
+  .orcamento-form {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-tipo > label {
+    grid-column: 1/-1;
+  }
+  .orcamento-tipo-detalhes {
+    grid-template-columns: 1fr;
+  }
+  .orcamento-tipo label {
+    grid-template-columns: auto 1fr;
+  }
+  .orcamento-tipo label span {
+    grid-column: 2;
+  }
+}
