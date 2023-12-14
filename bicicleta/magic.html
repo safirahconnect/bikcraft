@@ -11,13 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,700;1,700&family=Poppins:wght@500;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="../css/style.css" as="style">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body id="bicicleta">
   <header class="header-bg">
     <div class="container header">
-      <a href="../index.html"><img src="../img/bikcraft.svg" alt="Logo da Bikcraft"></a>
+      <a href="../index.html"><img src="../img/bikcraft.svg" width="136" height="32" alt="Logo da Bikcraft"></a>
 
       <nav aria-label="primária">
         <ul class="header-menu font-1-sm w">
@@ -38,9 +39,9 @@
 
       <div class="container bicicleta-interna">
         <ul class="bicicleta-interna-galeria">
-          <li><img src="../img/bicicleta/nimbus2.jpg" alt=""></li>
-          <li><img src="../img/bicicleta/nimbus1.jpg" alt=""></li>
-          <li><img src="../img/bicicleta/nimbus3.jpg" alt=""></li>
+          <li><img src="../img/bicicleta/nimbus2.jpg" width="1120" height="880" alt="Primeira foto da bicicleta Magic"></li>
+          <li><img src="../img/bicicleta/nimbus1.jpg" width="1120" height="880" alt="Segunda foto da bicicleta Magic"></li>
+          <li><img src="../img/bicicleta/nimbus3.jpg" width="1120" height="880" alt="Terceira foto da bicicleta Magic"></li>
         </ul>
 
         <div class="bicicleta-interna-info">
@@ -54,25 +55,25 @@
           <h2 class="font-1-min-caps w">Informações</h2>
           <ul class="bicicleta-interna-informacoes">
             <li>
-              <img src="../img/icones/eletrica.svg" alt="">
+              <img src="../img/icones/eletrica.svg" width="24" height="24" alt="">
               <h3 class="font-1-sm w">Motor Elétrico</h3>
               <p class="font-2-min g-8">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
             </li>
 
             <li>
-              <img src="../img/icones/velocidade.svg" alt="">
+              <img src="../img/icones/velocidade.svg" width="24" height="24" alt="">
               <h3 class="font-1-sm w">40 km/h</h3>
               <p class="font-2-min g-8">A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
             </li>
 
             <li>
-              <img src="../img/icones/rastreador.svg" alt="">
+              <img src="../img/icones/rastreador.svg" width="24" height="24" alt="">
               <h3 class="font-1-sm w">Rastreador</h3>
               <p class="font-2-min g-8">Rastreador e sistema anti-furto para garantir o seu sossego.</p>
             </li>
 
             <li>
-              <img src="../img/icones/carbono.svg" alt="">
+              <img src="../img/icones/carbono.svg" width="24" height="24" alt="">
               <h3 class="font-1-sm w">Fibra de Carbono</h3>
               <p class="font-2-min g-8">Maior proteção possível para a sua Bikcraft com fibra de carbono.</p>
             </li>
@@ -116,14 +117,14 @@
     <ul class="escolha-lista">
       <li>
         <a href="./nimbus.html">
-          <img src="../img/bicicletas/nimbus.jpg" alt="Foto da bicicleta Nimbus">
+          <img src="../img/bicicletas/nimbus.jpg" width="1120" height="880" alt="Foto da bicicleta Nimbus">
           <h3 class="font-1-lg g-15">Nimbus Stark</h3>
           <span class="font-2-sm-b g-12">R$ 4999</span>
         </a>
       </li>
       <li>
         <a href="./nebula.html">
-          <img src="../img/bicicletas/nebula.jpg" alt="Foto da bicicleta Nebula">
+          <img src="../img/bicicletas/nebula.jpg" width="1120" height="880" alt="Foto da bicicleta Nebula">
           <h3 class="font-1-lg g-15">Nebula Cosmic</h3>
           <span class="font-2-sm-b g-12">R$ 3999</span>
         </a>
@@ -133,9 +134,10 @@
 
   <section class="seguro-bicicleta-interna-bg">
     <div class="seguro-bicicleta-interna container">
-      <div class="seguro-bicicleta-interna-img">
-        <img src="../img/fotos/seguros.jpg" alt="">
-      </div>
+      <picture class="seguro-bicicleta-interna-img">
+        <source media="(max-width: 800px)" srcset="../img/fotos/seguros-otm.jpg">
+        <img src="../img/fotos/seguros.jpg" width="1360" height="1512" alt="Foto de uma pessoa em cima de uma bicicleta Bikcraft">
+      </picture>
       <div class="seguro-bicicleta-interna-info">
         <h2 class="font-1-max w">Pedale mais tranquilo com <br> o nosso seguro<span class="p-1">.</span></h2>
         <p class="font-2-md g-6">Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.</p>
@@ -146,16 +148,16 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="../img/bikcraft.svg" alt="">
+      <img src="../img/bikcraft.svg" width="136" height="32" alt="Logo da Bikcraft">
       <ul class="footer-contato font-2-sm g-8">
         <h2 class="font-2-md-b-caps w">Contato</h2>
         <li><a href="tel:+5518999999999">18 99999-9999</a></li>
         <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
         <li>Rua Ali Perto, 442 - Botafogo <span>Rio de Janeiro - RJ</span></li>
         <ul class="footer-redes">
-          <li><a href=""><img src="/img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
-          <li><a href=""><img src="/img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
-          <li><a href=""><img src="/img/redes-sociais/youtube.svg" alt="Youtube"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/instagram.svg" width="32" height="32" alt="Instagram"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/facebook.svg" width="32" height="32" alt="Facebook"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/youtube.svg" width="32" height="32" alt="Youtube"></a></li>
         </ul>
       </ul>
       <nav>

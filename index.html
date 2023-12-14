@@ -11,13 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,700;1,700&family=Poppins:wght@500;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header-bg">
     <div class="container header">
-      <a href="./"><img src="img/bikcraft.svg" alt="Logo da Bikcraft"></a>
+      <a href="./"><img src="img/bikcraft.svg" width="136" height="32" alt="Logo da Bikcraft"></a>
 
       <nav aria-label="primária">
         <ul class="header-menu font-1-sm w">
@@ -37,9 +38,10 @@
         <a class="botao" href="bicicletas.html">Selecione a sua</a>
       </div>
 
-      <div class="introducao-img">
-        <img src="/img/fotos/introducao.jpg" alt="Foto da bicicleta">
-      </div>
+      <picture class="introducao-img">
+        <source media="(max-width: 800px)" srcset="/img/bicicletas/nimbus.jpg">
+        <img src="/img/fotos/introducao.jpg" width="1280" height="1600" alt="Foto da bicicleta Nimbus">
+      </picture>
     </div>
   </main>
 
@@ -49,21 +51,21 @@
     <ul class="container escolha-lista">
       <li>
         <a href="bicicleta/magic.html">
-          <img src="./img/bicicletas/magic-home.jpg" alt="Foto da bicicleta Magic">
+          <img src="./img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Foto da bicicleta Magic">
           <h3 class="font-1-lg g-15">Magic Might</h3>
           <span class="font-2-sm-b g-12">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="bicicleta/nimbus.html">
-          <img src="./img/bicicletas/nimbus-home.jpg" alt="Foto da bicicleta Nimbus">
+          <img src="./img/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Foto da bicicleta Nimbus">
           <h3 class="font-1-lg g-15">Nimbus Stark</h3>
           <span class="font-2-sm-b g-12">R$ 4999</span>
         </a>
       </li>
       <li>
         <a href="bicicleta/nebula.html">
-          <img src="./img/bicicletas/nebula-home.jpg" alt="Foto da bicicleta Nebula">
+          <img src="./img/bicicletas/nebula-home.jpg" width="920" height="1040" alt="Foto da bicicleta Nebula">
           <h3 class="font-1-lg g-15">Nebula Cosmic</h3>
           <span class="font-2-sm-b g-12">R$ 3999</span>
         </a>
@@ -81,21 +83,21 @@
 
         <ul>
           <li>
-            <img src="./img/icones/eletrica.svg" alt="">
+            <img src="./img/icones/eletrica.svg" width="24" height="24" alt="">
             <h3 class="font-1-md w">Motor Elétrico</h3>
             <p class="font-2-xsm g-8">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </li>
           <li>
-            <img src="./img/icones/rastreador.svg" alt="">
+            <img src="./img/icones/rastreador.svg" width="24" height="24" alt="">
             <h3 class="font-1-md w">Rastreador</h3>
             <p class="font-2-xsm g-8">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
           </li>
         </ul>
       </div>
 
-      <div class="tecnologia-img">
-        <img src="./img/fotos/diferencial.jpg" alt="Foto da tecnologia da Bikcraft">
-      </div>
+      <picture class="tecnologia-img">
+        <img src="./img/fotos/diferencial.jpg" width="1200" height="1920" alt="Foto das tecnologias da Bikcraft">
+      </picture>
     </div>
   </section>
 
@@ -103,36 +105,37 @@
     <h2 class="container font-1-max g-15">nossos parceiros<span class="p-1">.</span></h2>
     <ul class="container">
       <li>
-        <img src="/img/parceiros/caravan.svg" alt="Caravan">
+        <img src="/img/parceiros/caravan.svg" width="140" height="38" alt="Caravan">
       </li>
       <li>
-        <img src="/img/parceiros/ranek.svg" alt="Ranek">
+        <img src="/img/parceiros/ranek.svg" width="148" height="36" alt="Ranek">
       </li>
       <li>
-        <img src="/img/parceiros/handel.svg" alt="Handel">
+        <img src="/img/parceiros/handel.svg" width="139" height="50" alt="Handel">
       </li>
       <li>
-        <img src="/img/parceiros/dogs.svg" alt="Dogs">
+        <img src="/img/parceiros/dogs.svg" width="152" height="39" alt="Dogs">
       </li>
       <li>
-        <img src="/img/parceiros/lescone.svg" alt="Lescone">
+        <img src="/img/parceiros/lescone.svg" width="208" height="41" alt="Lescone">
       </li>
       <li>
-        <img src="/img/parceiros/flexblog.svg" alt="Flexblog">
+        <img src="/img/parceiros/flexblog.svg" width="164" height="38" alt="Flexblog">
       </li>
       <li>
-        <img src="/img/parceiros/wildbeast.svg" alt="Wildbeast">
+        <img src="/img/parceiros/wildbeast.svg" width="196" height="34" alt="Wildbeast">
       </li>
       <li>
-        <img src="/img/parceiros/surfbot.svg" alt="Surfboot">
+        <img src="/img/parceiros/surfbot.svg" width="200" height="49" alt="Surfboot">
       </li>
     </ul>
   </section>
 
   <section id="depoimento" class="depoimento-bg" aria-label="Depoimento de um cliente da Bikcraft">
-    <div class="depoimento-img">
-      <img src="./img/fotos/depoimento.jpg" alt="Foto da cliente usando a Bikcraft">
-    </div>
+    <picture class="depoimento-img">
+      <source media="(max-width: 800px)" srcset="./img/fotos/depoimento-otm.jpg">
+      <img src="./img/fotos/depoimento.jpg" width="1360" height="1200" alt="Foto da cliente usando a Bikcraft">
+    </picture>
 
     <div class="depoimento-info">
       <h2 class="font-3-max p-5">se liga no feedback<span>:</span></h2>
@@ -178,16 +181,16 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="Logo da Bikcraft">
       <ul class="footer-contato font-2-sm g-8">
         <h2 class="font-2-md-b-caps w">Contato</h2>
         <li><a href="tel:+5518999999999">18 99999-9999</a></li>
         <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
         <li>Rua Ali Perto, 442 - Botafogo <span>Rio de Janeiro - RJ</span></li>
         <ul class="footer-redes">
-          <li><a href=""><img src="/img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
-          <li><a href=""><img src="/img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
-          <li><a href=""><img src="/img/redes-sociais/youtube.svg" alt="Youtube"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/instagram.svg" width="32" height="32" alt="Instagram"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/facebook.svg" width="32" height="32" alt="Facebook"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/youtube.svg" width="32" height="32" alt="Youtube"></a></li>
         </ul>
       </ul>
       <nav>

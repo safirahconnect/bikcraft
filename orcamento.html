@@ -11,13 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,700;1,700&family=Poppins:wght@500;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="orcamento">
   <header class="header-bg">
     <div class="container header">
-      <a href="./"><img src="img/bikcraft.svg" alt="Logo da Bikcraft"></a>
+      <a href="./"><img src="img/bikcraft.svg" width="136" height="32" alt="Logo da Bikcraft"></a>
 
       <nav aria-label="primária">
         <ul class="header-menu font-1-sm w">
@@ -37,7 +38,7 @@
       </div>
     </div>
 
-    <form class="orcamento container" action="">
+    <form class="orcamento container" action="" aria-label="Formulário de Orçamento de Seguro ou da Bicicleta Bikcraft">
       <div class="orcamento-tipo">
         <h2 class="font-1-min-caps g-5">Bikcraft ou Seguro?</h2>
 
@@ -56,26 +57,26 @@
           <div class="orcamento-tipo-detalhes">
             <ul>
               <li>
-                <img src="./img/icones/eletrica.svg" alt="">
+                <img src="./img/icones/eletrica.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Motor Elétrico</h3>
               </li>
               <li>
-                <img src="./img/icones/carbono.svg" alt="">
+                <img src="./img/icones/carbono.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Fibra de Carbono</h3>
               </li>
               <li>
-                <img src="./img/icones/velocidade.svg" alt="">
+                <img src="./img/icones/velocidade.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">40 km/h</h3>
               </li>
               <li>
-                <img src="./img/icones/rastreador.svg" alt="">
+                <img src="./img/icones/rastreador.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Rastreador</h3>
               </li>
             </ul>
 
-            <div>
-              <img src="./img/bicicletas/nimbus.jpg" alt="">
-            </div>
+            <picture>
+              <img src="./img/bicicletas/nimbus.jpg" width="1120" height="880" alt="Foto da bicicleta Nimbus">
+            </picture>
           </div>
 
           <input type="radio" name="produto" value="magic" id="magic">
@@ -84,26 +85,26 @@
           <div class="orcamento-tipo-detalhes">
             <ul>
               <li>
-                <img src="./img/icones/eletrica.svg" alt="">
+                <img src="./img/icones/eletrica.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Motor Elétrico</h3>
               </li>
               <li>
-                <img src="./img/icones/carbono.svg" alt="">
+                <img src="./img/icones/carbono.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Fibra de Carbono</h3>
               </li>
               <li>
-                <img src="./img/icones/velocidade.svg" alt="">
+                <img src="./img/icones/velocidade.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">40 km/h</h3>
               </li>
               <li>
-                <img src="./img/icones/rastreador.svg" alt="">
+                <img src="./img/icones/rastreador.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Rastreador</h3>
               </li>
             </ul>
 
-            <div>
-              <img src="./img/bicicletas/magic.jpg" alt="">
-            </div>
+            <picture>
+              <img src="./img/bicicletas/magic.jpg" width="1120" height="880" alt="Foto da Bicicleta Magic">
+            </picture>
           </div>
 
           <input type="radio" name="produto" value="nebula" id="nebula">
@@ -112,26 +113,26 @@
           <div class="orcamento-tipo-detalhes">
             <ul>
               <li>
-                <img src="./img/icones/eletrica.svg" alt="">
+                <img src="./img/icones/eletrica.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Motor Elétrico</h3>
               </li>
               <li>
-                <img src="./img/icones/carbono.svg" alt="">
+                <img src="./img/icones/carbono.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Fibra de Carbono</h3>
               </li>
               <li>
-                <img src="./img/icones/velocidade.svg" alt="">
+                <img src="./img/icones/velocidade.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">40 km/h</h3>
               </li>
               <li>
-                <img src="./img/icones/rastreador.svg" alt="">
+                <img src="./img/icones/rastreador.svg" width="16" height="16" alt="">
                 <h3 class="font-1-min g-12">Rastreador</h3>
               </li>
             </ul>
 
-            <div>
-              <img src="./img/bicicletas/nebula.jpg" alt="">
-            </div>
+            <picture>
+              <img src="./img/bicicletas/nebula.jpg" width="1120" height="880" alt="Foto da Bicicleta Nebula">
+            </picture>
           </div>
         </div>
 
@@ -216,16 +217,16 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="Logo da Bikcraft">
       <ul class="footer-contato font-2-sm g-8">
         <h2 class="font-2-md-b-caps w">Contato</h2>
         <li><a href="tel:+5518999999999">18 99999-9999</a></li>
         <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
         <li>Rua Ali Perto, 442 - Botafogo <span>Rio de Janeiro - RJ</span></li>
         <ul class="footer-redes">
-          <li><a href=""><img src="/img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
-          <li><a href=""><img src="/img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
-          <li><a href=""><img src="/img/redes-sociais/youtube.svg" alt="Youtube"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/instagram.svg" width="32" height="32" alt="Instagram"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/facebook.svg" width="32" height="32" alt="Facebook"></a></li>
+          <li><a href=""><img src="/img/redes-sociais/youtube.svg" width="32" height="32" alt="Youtube"></a></li>
         </ul>
       </ul>
       <nav>

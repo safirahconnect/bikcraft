@@ -14,7 +14,7 @@
   width: 100%; /*safari*/
   height: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: center;
 }
 
 .seguro-bicicleta-interna-info {
