@@ -1,0 +1,92 @@
+/*Reset - Formulário*/
+
+#contato form input,
+#contato form textarea,
+#orcamento form input[type="text"],
+#orcamento form input[type="email"],
+#orcamento form select {
+  width: 100%;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+/*Componente - Formulário*/
+
+#contato form,
+#orcamento .orcamento-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#orcamento .orcamento-form .checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+#orcamento .orcamento-form .checkbox input {
+  width: 24px;
+  height: 24px;
+}
+
+form input,
+form textarea,
+select {
+  margin-top: 4px;
+  padding: 12px;
+  border: 2px solid var(--gray-04);
+  border-radius: 4px;
+  color: var(--gray-15);
+  background: var(--gray-02);
+}
+
+#contato form input:focus,
+#contato form textarea:focus,
+#orcamento form input[type="text"]:focus,
+#orcamento form input[type="email"]:focus,
+#orcamento select:focus {
+  outline: none;
+  border: 2px solid var(--primary-01);
+  box-shadow: 0px 0px 0px 2px rgba(255, 187, 0, 0.5);
+}
+
+#contato form .email,
+#contato form .mensagem,
+#contato .botao,
+#orcamento h2,
+#orcamento .email,
+#orcamento .cpf,
+#orcamento .checkbox,
+#orcamento .botao {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 600px) {
+  #orcamento .orcamento-form,
+  #contato form {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  #orcamento .orcamento-form .checkbox input {
+    width: 16px;
+    height: 16px;
+  }
+}

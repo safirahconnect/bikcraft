@@ -41,27 +41,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-#contato form input,
-#contato form textarea,
-#orcamento form input[type="text"],
-#orcamento form input[type="email"],
-#orcamento form select {
-  width: 100%;
-}
-
-input,
-textarea {
-  box-sizing: border-box;
-}
-
-textarea {
-  resize: none;
-}
-
-button {
-  width: 100%;
-  background: none;
-  cursor: pointer;
-  border: none;
-}
