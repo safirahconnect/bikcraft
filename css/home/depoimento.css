@@ -46,7 +46,7 @@
 /*imagem solta, limitando ela o conteúdo pertinente a ela também para de crescer*/
 @media (min-width: 1200px) {
   .depoimento-img img {
-    max-height: 620px;
+    max-height: 740px;
   }
 }
 
